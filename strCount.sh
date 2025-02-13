@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wc -l /var/log/*.log | awk '{sum += $1} END {print sum}'
+wc -l /var/log/*.log | tail -n1
